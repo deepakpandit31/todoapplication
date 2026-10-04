@@ -143,7 +143,8 @@ function App() {
             />
 
             <button onClick={handlesearch}
-              className="rounded-xl bg-pink-200 px-6 py-3 font-bold text-slate-950 transition hover:bg-blue-300 active:scale-95"
+       
+              className="rounded-xl bg-linear-to-r from-yellow-200 to-pink-500  px-6 py-3 font-bold text-slate-950 transition hover:bg-blue-300 active:scale-95"
             >
               Search
             </button>
@@ -218,7 +219,7 @@ function App() {
 
     <button
       type="Submit"
-      className="w-full rounded-xl bg-linear-to-r from-yellow-400 to-pink-500 px-5 py-3 font-bold text-black transition hover:from-yellow-300 hover:to-pink-400 active:scale-[0.98]"
+      className="w-full rounded-xl bg-linear-to-r from-yellow-200 to-pink-500 px-5 py-3 font-bold text-black transition hover:from-yellow-300 hover:to-pink-400 active:scale-[0.98]"
     >
       Add Todo
     </button>
