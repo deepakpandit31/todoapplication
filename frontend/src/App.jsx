@@ -120,6 +120,7 @@ function App() {
       })
       .catch((error) => {
         alert("Failed to load todo. Please try again.");
+        
 
         console.log(error);
       }).finally(() => {
