@@ -29,6 +29,7 @@ const getAllTodos = async (search) => {
             todoData,
             { new: true }
         );
+        console.log("Updated Todo:", updatetodo);
         return updatetodo;
     }
     const updatetodostatusbyId = async (id, status) => {

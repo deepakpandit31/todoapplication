@@ -76,14 +76,17 @@ const gettodoByID = async (req, res) => {
 
 const updateTodo = async (req, res) => {
     try {
+
         const id = req.params.id;
         const todoData = req.body;
         const updatedTodo = await updateById(id, todoData);
+           
         if (updatedTodo === null) {
             return res.status(404).json({
                 message: `Nothing present to update`
             });
         }
+        
         return res.status(200).json({
             message: "Todo is updated successfully",
             todo: updatedTodo
